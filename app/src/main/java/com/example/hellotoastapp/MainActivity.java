@@ -1,5 +1,6 @@
 package com.example.hellotoastapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private int count = 0;
+    public static final String EXTRA_COUNT = "com.example.hellotoastapp.extra.count";
     private TextView showCount; //**
 
     @Override
@@ -41,5 +43,11 @@ public class MainActivity extends AppCompatActivity {
         if(showCount!=null){
             showCount.setText(Integer.toString(count));
         }
+    }
+
+    public void sayHello(View view) {
+        Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra(EXTRA_COUNT, count);
+        startActivity(intent);
     }
 }

@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">HelloToastApp</string>
-    <string name="button_label_toast">Toast</string>
-    <string name="button_label_count">Count</string>
+    <string name="button_label_toast">Diga Olá</string>
+    <string name="button_label_count">Count Up</string>
     <string name="count_initial_value">0</string>
-    <string name="toast_message">Hello Toast</string>
-    <string name="button_label_countdown">Countdown</string>
+    <string name="toast_message">Olá</string>
+    <string name="button_label_countdown">Count Down</string>
 </resources>
